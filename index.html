@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dire, Fare, Giocare | Ludoteca Creativa - Novara</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">🎲</div>
+                <div class="logo-text">DIRE, FARE, GIOCARE</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" onclick="showPage('activities')">Attività</a></li>
+                    <li><a href="#" onclick="showPage('spaces')">Spazi</a></li>
+                    <li><a href="#" onclick="showPage('prices')">Prezzi</a></li>
+                    <li><a href="#" onclick="showPage('events')">Eventi</a></li>
+		    <li><a href="#" onclick="showPage('booking')">Prenota</a></li>
+                    <li><a href="#" onclick="showPage('contacts')">Contatti</a></li>
+                </ul>
+            </nav>
+            <button class="cta-button" onclick="showPage('booking')">PRENOTA ORA</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- HOME PAGE -->
+        <section id="home" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Dove la fantasia <span>prende vita</span> attraverso il gioco</h1>
+                    <p>Benvenuti nella ludoteca creativa di Novara! Uno spazio magico dove i bambini esplorano, creano e imparano divertendosi con i nostri laboratori innovativi.</p>
+                    <div class="hero-buttons">
+                        <button class="cta-button" onclick="showPage('activities')">SCOPRI LE ATTIVITÀ</button>
+                        <button class="secondary-button" onclick="showPage('spaces')">TOUR VIRTUALE</button>
+                    </div>
+                </div>
+                <div class="hero-graphics">
+                    <div class="floating-element element-1">🧩</div>
+                    <div class="floating-element element-2">🚀</div>
+                    <div class="floating-element element-3">🎨</div>
+                    <div class="floating-element element-4">🏰</div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features">
+                <h2 class="section-title">Cosa Offriamo</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎭</div>
+                        <h3>Laboratori Creativi</h3>
+                        <p>Pittura, teatro, musica e tante attività artistiche per stimolare la creatività</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Giochi Educativi</h3>
+                        <p>Giochi didattici che sviluppano logica, problem solving e collaborazione</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎉</div>
+                        <h3>Feste di Compleanno</h3>
+                        <p>Pacchetti personalizzati per un compleanno indimenticabile</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Calendar Section -->
+            <section class="calendar-section">
+                <h2 class="section-title">Prossimi Eventi</h2>
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button>‹</button>
+                        <h3>Ottobre 2023</h3>
+                        <button>›</button>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="calendar-day">Lun</div>
+                        <div class="calendar-day">Mar</div>
+                        <div class="calendar-day">Mer</div>
+                        <div class="calendar-day">Gio</div>
+                        <div class="calendar-day">Ven</div>
+                        <div class="calendar-day">Sab</div>
+                        <div class="calendar-day">Dom</div>
+                        
+                        <!-- Empty days -->
+                        <div class="calendar-day"></div>
+                        <div class="calendar-day"></div>
+                        <div class="calendar-day"></div>
+                        <div class="calendar-day"></div>
+                        <div class="calendar-day">1</div>
+                        <div class="calendar-day">2</div>
+                        <div class="calendar-day">3</div>
+                        
+                        <div class="calendar-day">4</div>
+                        <div class="calendar-day">5</div>
+                        <div class="calendar-day">6</div>
+                        <div class="calendar-day event-day">7</div>
+                        <div class="calendar-day">8</div>
+                        <div class="calendar-day">9</div>
+                        <div class="calendar-day">10</div>
+                        
+                        <div class="calendar-day">11</div>
+                        <div class="calendar-day">12</div>
+                        <div class="calendar-day event-day">13</div>
+                        <div class="calendar-day">14</div>
+                        <div class="calendar-day">15</div>
+                        <div class="calendar-day">16</div>
+                        <div class="calendar-day">17</div>
+                        
+                        <div class="calendar-day">18</div>
+                        <div class="calendar-day event-day">19</div>
+                        <div class="calendar-day">20</div>
+                        <div class="calendar-day">21</div>
+                        <div class="calendar-day">22</div>
+                        <div class="calendar-day">23</div>
+                        <div class="calendar-day">24</div>
+                        
+                        <div class="calendar-day">25</div>
+                        <div class="calendar-day">26</div>
+                        <div class="calendar-day">27</div>
+                        <div class="calendar-day event-day">28</div>
+                        <div class="calendar-day">29</div>
+                        <div class="calendar-day">30</div>
+                        <div class="calendar-day">31</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Section -->
+            <section class="social-section">
+                <h2 class="section-title">Segui la Magia su Instagram</h2>
+                <p>@direfare.giocare</p>
+                <div class="instagram-feed">
+                    <div class="instagram-post">📸 Post 1</div>
+                    <div class="instagram-post">📸 Post 2</div>
+                    <div class="instagram-post">📸 Post 3</div>
+                    <div class="instagram-post">📸 Post 4</div>
+                </div>
+            </section>
+        </section>
+
+        <!-- ACTIVITIES PAGE -->
+        <section id="activities" class="page">
+            <div class="activities">
+                <h1 class="section-title">Le Nostre Attività</h1>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Scopri tutti i laboratori e le attività creative pensate per stimolare la fantasia e l'apprendimento attraverso il gioco</p>
+                
+                <div class="age-filter">
+                    <button class="age-button active" onclick="filterActivities('all')">Tutte le età</button>
+                    <button class="age-button" onclick="filterActivities('0-3')">0-3 anni</button>
+                    <button class="age-button" onclick="filterActivities('4-6')">4-6 anni</button>
+                    <button class="age-button" onclick="filterActivities('7-10')">7-10 anni</button>
+                </div>
+                
+                <div class="activity-cards">
+                    <div class="activity-card" data-age="0-3">
+                        <div class="activity-image" style="background: #FF9E6D;">👶</div>
+                        <div class="activity-content">
+                            <h3>Primi Passi Creativi</h3>
+                            <div class="activity-meta">
+                                <span>0-3 anni</span>
+                                <span>Durata: 45 min</span>
+                            </div>
+                            <p>Esperienze sensoriali con materiali atossici per stimolare i primi approcci creativi</p>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-card" data-age="4-6">
+                        <div class="activity-image" style="background: #8FBC94;">🎨</div>
+                        <div class="activity-content">
+                            <h3>Favole a Colori</h3>
+                            <div class="activity-meta">
+                                <span>4-6 anni</span>
+                                <span>Durata: 1 ora</span>
+                            </div>
+                            <p>Disegno e pittura ispirati alle fiabe classiche con tecniche divertenti</p>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-card" data-age="7-10">
+                        <div class="activity-image" style="background: #6A9EB7;">🔬</div>
+                        <div class="activity-content">
+                            <h3>Piccoli Scienziati</h3>
+                            <div class="activity-meta">
+                                <span>7-10 anni</span>
+                                <span>Durata: 1.5 ore</span>
+                            </div>
+                            <p>Esperimenti scientifici sicuri e divertenti per scoprire il mondo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-card" data-age="4-6">
+                        <div class="activity-image" style="background: #FFD166;">🎭</div>
+                        <div class="activity-content">
+                            <h3>Teatro in Gioco</h3>
+                            <div class="activity-meta">
+                                <span>4-6 anni</span>
+                                <span>Durata: 1 ora</span>
+                            </div>
+                            <p>Giochi di ruolo e improvvisazione per sviluppare sicurezza e creatività</p>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-card" data-age="7-10">
+                        <div class="activity-image" style="background: #C7A8E4;">🧩</div>
+                        <div class="activity-content">
+                            <h3>Costruzioni Giganti</h3>
+                            <div class="activity-meta">
+                                <span>7-10 anni</span>
+                                <span>Durata: 1.5 ore</span>
+                            </div>
+                            <p>Mattoncini e materiali riciclati per creare strutture imponenti</p>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-card" data-age="0-3">
+                        <div class="activity-image" style="background: #A5D8D4;">🎵</div>
+                        <div class="activity-content">
+                            <h3>Musica in Fasce</h3>
+                            <div class="activity-meta">
+                                <span>0-3 anni</span>
+                                <span>Durata: 45 min</span>
+                            </div>
+                            <p>Prime esperienze musicali con strumenti semplici e ritmi coinvolgenti</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPACES PAGE -->
+        <section id="spaces" class="page">
+            <div class="spaces">
+                <h1 class="section-title">I Nostri Spazi</h1>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Ambienti progettati per la sicurezza e l'ispirazione, divisi per aree tematiche e fasce d'età</p>
+                
+                <div class="space-tabs">
+                    <div class="space-tab active" onclick="showSpace('area-creativa')">Area Creativa</div>
+                    <div class="space-tab" onclick="showSpace('area-costruzioni')">Area Costruzioni</div>
+                    <div class="space-tab" onclick="showSpace('area-lettura')">Angolo Lettura</div>
+                    <div class="space-tab" onclick="showSpace('area-scienze')">Laboratorio Scienze</div>
+                    <div class="space-tab" onclick="showSpace('feste')">Sala Feste</div>
+                    <div class="space-tab" onclick="showSpace('esterno')">Giardino</div>
+                </div>
+                
+                <div id="area-creativa" class="space-content active">
+                    <h2>Area Creativa</h2>
+                    <p>Uno spazio luminoso con tavoli ergonomici e ogni tipo di materiale artistico, dalla pittura al collage, dalla creta ai tessuti. Zone separate per diverse tecniche creative.</p>
+                    <div class="space-gallery">
+                        <div class="gallery-item">🖌️ Foto Area Pittura</div>
+                        <div class="gallery-item">✂️ Foto Tavolo Creativo</div>
+                        <div class="gallery-item">🧵 Foto Laboratorio Tessuti</div>
+                    </div>
+                </div>
+                
+                <div id="area-costruzioni" class="space-content">
+                    <h2>Area Costruzioni</h2>
+                    <p>Mattoncini giganti, Lego, materiali riciclati e strutture modulari per costruire città fantastiche, ponti e castelli. Pavimento imbottito per giocare a terra in sicurezza.</p>
+                    <div class="space-gallery">
+                        <div class="gallery-item">🧱 Foto Mattoncini</div>
+                        <div class="gallery-item">🏗️ Foto Costruzioni</div>
+                        <div class="gallery-item">🚜 Foto Area Giochi</div>
+                    </div>
+                </div>
+                
+                <div id="area-lettura" class="space-content">
+                    <h2>Angolo Lettura</h2>
+                    <p>Cuscini giganti, pouf e piccole tende per immergersi nelle storie. Libreria a misura di bambino con oltre 500 titoli selezionati.</p>
+                    <div class="space-gallery">
+                        <div class="gallery-item">📚 Foto Libreria</div>
+                        <div class="gallery-item">🛋️ Foto Angolo Lettura</div>
+                        <div class="gallery-item">🧸 Foto Area Relax</div>
+                    </div>
+                </div>
+                
+                <div id="area-scienze" class="space-content">
+                    <h2>Laboratorio Scienze</h2>
+                    <p>Microscopi, provette sicure, modelli anatomici e exhibit interattivi per scoprire il mondo attraverso esperimenti guidati.</p>
+                    <div class="space-gallery">
+                        <div class="gallery-item">🔬 Foto Microscopi</div>
+                        <div class="gallery-item">⚗️ Foto Esperimenti</div>
+                        <div class="gallery-item">🧪 Foto Laboratorio</div>
+                    </div>
+                </div>
+                
+                <div id="feste" class="space-content">
+                    <h2>Sala Feste</h2>
+                    <p>Spazio modulare per compleanni ed eventi, con sistema audio, proiettore e possibilità di personalizzazione completa a tema.</p>
+                    <div class="space-gallery">
+                        <div class="gallery-item">🎂 Foto Sala Feste</div>
+                        <div class="gallery-item">🎈 Foto Allestimento</div>
+                        <div class="gallery-item">🎪 Foto Area Giochi</div>
+                    </div>
+                </div>
+                
+                <div id="esterno" class="space-content">
+                    <h2>Giardino</h2>
+                    <p>Area esterna attrezzata con giochi in legno, orto didattico e spazio per attività motorie, completamente recintata e ombreggiata.</p>
+                    <div class="space-gallery">
+                        <div class="gallery-item">🌳 Foto Giardino</div>
+                        <div class="gallery-item">🚜 Foto Giochi Esterni</div>
+                        <div class="gallery-item">🌻 Foto Orto</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICES PAGE -->
+        <section id="prices" class="page">
+            <div class="prices">
+                <h1 class="section-title">Tariffe e Abbonamenti</h1>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Scegli la formula che preferisci tra ingressi singoli, pacchetti o abbonamenti illimitati</p>
+                
+                <div class="price-cards">
+                    <div class="price-card">
+                        <h3>Ingresso Singolo</h3>
+                        <div class="price">€12</div>
+                        <ul class="price-features">
+                            <li>Accesso 3 ore</li>
+                            <li>Partecipazione a 1 laboratorio</li>
+                            <li>Utilizzo spazi comuni</li>
+                            <li>Merenda inclusa</li>
+                        </ul>
+                        <button class="cta-button" style="width: 100%;" onclick="showPage('contacts')">PRENOTA</button>
+                    </div>
+                    
+                    <div class="price-card popular">
+                        <div class="popular-badge">POPOLARE</div>
+                        <h3>Pacchetto 10 Ingressi</h3>
+                        <div class="price">€90</div>
+                        <ul class="price-features">
+                            <li>10 ingressi da 3 ore</li>
+                            <li>Partecipazione illimitata a laboratori</li>
+                            <li>Utilizzo tutti gli spazi</li>
+                            <li>Merenda inclusa</li>
+                            <li>Sconto 25% sulle feste</li>
+                        </ul>
+                        <button class="cta-button" style="width: 100%;" onclick="showPage('contacts')">ACQUISTA</button>
+                    </div>
+                    
+                    <div class="price-card">
+                        <h3>Abbonamento Mensile</h3>
+                        <div class="price">€120</div>
+                        <ul class="price-features">
+                            <li>Accesso illimitato</li>
+                            <li>Tutti i laboratori inclusi</li>
+                            <li>Utilizzo prioritario spazi</li>
+                            <li>Merende illimitate</li>
+                            <li>Sconto 50% sulle feste</li>
+                            <li>Ingresso gratuito per 1 amico</li>
+                        </ul>
+                        <button class="cta-button" style="width: 100%;" onclick="showPage('contacts')">ABBONATI</button>
+                    </div>
+                </div>
+                
+                <div style="background: white; border-radius: 20px; padding: 2rem; margin-top: 3rem;">
+                    <h2 style="color: var(--blue); margin-bottom: 1rem;">Feste di Compleanno</h2>
+                    <p style="margin-bottom: 1.5rem;">Pacchetti personalizzabili per un compleanno indimenticabile:</p>
+                    <ul style="columns: 2; list-style-position: inside;">
+                        <li>Base (2 ore): €150 (max 10 bambini)</li>
+                        <li>Premium (3 ore): €220 (max 15 bambini)</li>
+                        <li>All Inclusive (4 ore): €300 (max 20 bambini)</li>
+                        <li>Temi personalizzati (+€50)</li>
+                        <li>Fotografo (+€80)</li>
+                        <li>Truccabimbi (+€40)</li>
+                    </ul>
+                    <button class="cta-button" style="margin-top: 1.5rem;" onclick="showPage('contacts')">PIANIFICA LA FESTA</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- EVENTS PAGE -->
+        <section id="events" class="page">
+            <section class="calendar-section" style="background: white; color: #333; padding-top: 2rem;">
+                <div class="activities">
+                    <h1 class="section-title">Eventi Speciali</h1>
+                    <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Scopri i nostri eventi tematici, workshop speciali e giornate a tema per vivere esperienze uniche</p>
+                </div>
+                
+                <div class="calendar-container" style="background: rgba(143, 188, 148, 0.1);">
+                    <div class="calendar-header">
+                        <button>‹</button>
+                        <h3>Ottobre 2023</h3>
+                        <button>›</button>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="calendar-day">Lun</div>
+                        <div class="calendar-day">Mar</div>
+                        <div class="calendar-day">Mer</div>
+                        <div class="calendar-day">Gio</div>
+                        <div class="calendar-day">Ven</div>
+                        <div class="calendar-day">Sab</div>
+                        <div class="calendar-day">Dom</div>
+                        
+                        <!-- Empty days -->
+                        <div class="calendar-day"></div>
+                        <div class="calendar-day"></div>
+                        <div class="calendar-day"></div>
+                        <div class="calendar-day"></div>
+                        <div class="calendar-day">1</div>
+                        <div class="calendar-day">2</div>
+                        <div class="calendar-day">3</div>
+                        
+                        <div class="calendar-day">4</div>
+                        <div class="calendar-day">5</div>
+                        <div class="calendar-day">6</div>
+                        <div class="calendar-day event-day">7</div>
+                        <div class="calendar-day">8</div>
+                        <div class="calendar-day">9</div>
+                        <div class="calendar-day">10</div>
+                        
+                        <div class="calendar-day">11</div>
+                        <div class="calendar-day">12</div>
+                        <div class="calendar-day event-day">13</div>
+                        <div class="calendar-day">14</div>
+                        <div class="calendar-day">15</div>
+                        <div class="calendar-day">16</div>
+                        <div class="calendar-day">17</div>
+                        
+                        <div class="calendar-day">18</div>
+                        <div class="calendar-day event-day">19</div>
+                        <div class="calendar-day">20</div>
+                        <div class="calendar-day">21</div>
+                        <div class="calendar-day">22</div>
+                        <div class="calendar-day">23</div>
+                        <div class="calendar-day">24</div>
+                        
+                        <div class="calendar-day">25</div>
+                        <div class="calendar-day">26</div>
+                        <div class="calendar-day">27</div>
+                        <div class="calendar-day event-day">28</div>
+                        <div class="calendar-day">29</div>
+                        <div class="calendar-day">30</div>
+                        <div class="calendar-day">31</div>
+                    </div>
+                </div>
+                
+                <div style="max-width: 1000px; margin: 3rem auto;">
+                    <h2 style="text-align: center; margin-bottom: 2rem; color: var(--blue);">Eventi in Programma</h2>
+                    
+                    <div style="background: white; border-radius: 20px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                        <h3 style="color: var(--orange);">7 Ottobre - Notte al Museo per Bambini</h3>
+                        <p style="margin: 0.5rem 0; color: #666;">Dalle 20:00 alle 23:00</p>
+                        <p>Caccia al tesoro notturna tra dinosauri e opere d'arte con pernottamento in ludoteca. Per bambini 6-10 anni.</p>
+                        <button class="cta-button" style="margin-top: 1rem;" onclick="showPage('contacts')">PRENOTA</button>
+                    </div>
+                    
+                    <div style="background: white; border-radius: 20px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                        <h3 style="color: var(--orange);">13 Ottobre - Laboratorio di Robotica</h3>
+                        <p style="margin: 0.5rem 0; color: #666;">Dalle 16:30 alle 18:30</p>
+                        <p>Costruisci il tuo primo robot con kit educativi LEGO WeDo. Per bambini 7-12 anni. Posti limitati!</p>
+                        <button class="cta-button" style="margin-top: 1rem;" onclick="showPage('contacts')">PRENOTA</button>
+                    </div>
+                    
+                    <div style="background: white; border-radius: 20px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                        <h3 style="color: var(--orange);">19 Ottobre - Festa di Halloween</h3>
+                        <p style="margin: 0.5rem 0; color: #666;">Dalle 15:00 alle 19:00</p>
+                        <p>Laboratori mostruosi, caccia al tesoro spaventosa e truccabimbi horror. Costume obbligatorio!</p>
+                        <button class="cta-button" style="margin-top: 1rem;" onclick="showPage('contacts')">PRENOTA</button>
+                    </div>
+                    
+                    <div style="background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                        <h3 style="color: var(--orange);">28 Ottobre - Giornata delle Scienze</h3>
+                        <p style="margin: 0.5rem 0; color: #666;">Dalle 10:00 alle 18:00</p>
+                        <p>8 stazioni scientifiche con esperimenti incredibili per scoprire la fisica, la chimica e la biologia divertendosi!</p>
+                        <button class="cta-button" style="margin-top: 1rem;" onclick="showPage('contacts')">PRENOTA</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- CONTACTS PAGE -->
+        <section id="contacts" class="page">
+            <div class="contacts">
+                <div>
+                    <h1 class="section-title" style="text-align: left; margin-bottom: 2rem;">Contattaci</h1>
+                    <p style="margin-bottom: 2rem;">Compila il form per prenotare attività, richiedere informazioni o organizzare feste di compleanno. Ti risponderemo entro 24 ore!</p>
+                    
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Nome e Cognome</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Telefono</label>
+                                <input type="tel" id="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Servizio di interesse</label>
+                                <select id="service">
+                                    <option value="">Seleziona...</option>
+                                    <option value="ingresso">Ingresso singolo</option>
+                                    <option value="abbonamento">Abbonamento</option>
+                                    <option value="compleanno">Festa di compleanno</option>
+                                    <option value="campo">Campo estivo/invernale</option>
+                                    <option value="info">Informazioni generali</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Messaggio</label>
+                                <textarea id="message" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="cta-button" style="width: 100%;">INVIA RICHIESTA</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div>
+                    <!-- MAPPA GOOGLE MAPS -->
+		<div class="google-map">
+    			<iframe
+        		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.180721333112!2d8.621013176723917!3d45.446014234651315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786598ab77fb2eb%3A0x1490b632d79964a2!2sVia%20Canobio%2C%208%2C%2028100%20Novara%20NO!5e0!3m2!1sit!2sit!4v1752732226148!5m2!1sit!2sit"
+        		width="100%" 
+        		height="400" 
+        		style="border:0;"
+        		allowfullscreen 
+        		loading="lazy"
+        		referrerpolicy="no-referrer-when-downgrade">
+    			</iframe>
+		</div>
+                    
+                    <div style="background: white; border-radius: 20px; padding: 2rem; margin-top: 2rem;">
+                        <h3 style="color: var(--blue); margin-bottom: 1rem;">Orari di Apertura</h3>
+                        <p style="margin-bottom: 1rem;"><strong>Lunedì-Venerdì:</strong> 9:00-18:00</p>
+                        <p style="margin-bottom: 1rem;"><strong>Sabato-Domenica:</strong> 10:00-19:00</p>
+                        <p><strong>Festivi:</strong> 10:00-19:00</p>
+                        
+                        <h3 style="color: var(--blue); margin: 2rem 0 1rem;">Contatti Diretti</h3>
+                        <p style="margin-bottom: 1rem;">📞 <strong>Telefono:</strong> 0321 123 4567</p>
+                        <p style="margin-bottom: 1rem;">📱 <strong>WhatsApp:</strong> 345 678 9012</p>
+                        <p>✉️ <strong>Email:</strong> info@direfaregiocare.it</p>
+                        
+                        <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                            <button class="cta-button" style="flex: 1;" onclick="window.location.href='tel:+3903211234567'">CHIAMA</button>
+                            <button class="secondary-button" style="flex: 1;" onclick="window.location.href='https://wa.me/393456789012'">WHATSAPP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- BOOKING PAGE -->
+        <section id="booking" class="page">
+            <div class="booking-container">
+                <div class="booking-header">
+                    <h1><i class="fas fa-calendar-check"></i> Prenota la tua esperienza</h1>
+                    <p>Compila il form per garantire il posto ai laboratori o agli spazi gioco</p>
+                </div>
+
+                <form id="bookingForm" class="booking-form">
+                    <!-- Step 1 - Tipo Prenotazione -->
+                    <div class="form-step active" data-step="1">
+                        <h2><span>1</span> Scegli il servizio</h2>
+                        <div class="service-options">
+                            <label class="service-card">
+                                <input type="radio" name="service" value="laboratorio" required>
+                                <div class="card-content">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <h3>Laboratorio Creativo</h3>
+                                    <p>Attività guidate con materiali artistici e scientifici</p>
+                                </div>
+                            </label>
+
+                            <label class="service-card">
+                                <input type="radio" name="service" value="gioco_libero">
+                                <div class="card-content">
+                                    <i class="fas fa-gamepad"></i>
+                                    <h3>Gioco Libero</h3>
+                                    <p>Accesso agli spazi attrezzati con giochi educativi</p>
+                                </div>
+                            </label>
+
+                            <label class="service-card">
+                                <input type="radio" name="service" value="compleanno">
+                                <div class="card-content">
+                                    <i class="fas fa-birthday-cake"></i>
+                                    <h3>Festa di Compleanno</h3>
+                                    <p>Pacchetti personalizzati per un giorno speciale</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 - Dettagli -->
+                    <div class="form-step" data-step="2">
+                        <h2><span>2</span> Dettagli prenotazione</h2>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="bookingDate">Data*</label>
+                                <input type="date" id="bookingDate" name="bookingDate" required min="">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timeSlot">Fascia oraria*</label>
+                                <select id="timeSlot" name="timeSlot" required>
+                                    <option value="">Seleziona...</option>
+                                    <option value="9-11">9:00 - 11:00</option>
+                                    <option value="11-13">11:00 - 13:00</option>
+                                    <option value="15-17">15:00 - 17:00</option>
+                                    <option value="17-19">17:00 - 19:00</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="participants">Num. bambini*</label>
+                                <input type="number" id="participants" name="participants" min="1" max="10" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="childAge">Età media*</label>
+                                <select id="childAge" name="childAge" required>
+                                    <option value="">Seleziona...</option>
+                                    <option value="1-3">1-3 anni</option>
+                                    <option value="4-6">4-6 anni</option>
+                                    <option value="7-10">7-10 anni</option>
+                                    <option value="11+">11+ anni</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specialRequests">Richiesta speciale</label>
+                            <textarea id="specialRequests" name="specialRequests" placeholder="Allergie, bisogni speciali..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 - Dati personali -->
+                    <div class="form-step" data-step="3">
+                        <h2><span>3</span> I tuoi dati</h2>
+                        
+                        <div class="form-group">
+                            <label for="fullName">Nome e cognome*</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefono*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">Accetto l'informativa sulla privacy*</label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Iscrivimi alla newsletter</label>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-secondary" id="prevBtn" disabled>
+                            <i class="fas fa-arrow-left"></i> Indietro
+                        </button>
+                        <button type="button" class="btn btn-primary" id="nextBtn">
+                            Avanti <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button type="submit" class="btn btn-submit" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i> Completa prenotazione
+                        </button>
+                    </div>
+                </form>
+
+                <div class="booking-summary">
+                    <h3><i class="fas fa-receipt"></i> Riepilogo</h3>
+                    <div id="summaryContent"></div>
+                    <div class="price-estimate">
+                        <span>Totale stimato:</span>
+                        <strong id="totalPrice">€0</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>Dire, Fare, Giocare</h3>
+                <p>Uno spazio dove creatività e apprendimento si incontrano attraverso il gioco. Dal 2018 a Novara.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contatti</h3>
+                <div class="contact-info">
+                    <p>📍 Via del Gioco 23, Novara</p>
+                    <p>📞 0321 123 4567</p>
+                    <p>✉️ info@direfaregiocare.it</p>
+                    <p>🕒 Lun-Ven: 9:00-18:00 | Sab-Dom: 10:00-19:00</p>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Seguici</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com/direfare.giocare" class="social-icon">f</a>
+                    <a href="https://instagram.com/direfare.giocare" class="social-icon">ig</a>
+                    <a href="#" class="social-icon">in</a>
+                    <a href="#" class="social-icon">yt</a>
+                </div>
+                <div style="margin-top: 20px;">
+                    <button class="cta-button">NEWSLETTER</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>© 2023 Dire, Fare, Giocare di Novara | P.IVA 12345678901 | Privacy Policy</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mostra la pagina selezionata
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+        
+        // Filtra attività per età
+        function filterActivities(age) {
+            document.querySelectorAll('.age-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            document.querySelectorAll('.activity-card').forEach(card => {
+                if (age === 'all' || card.dataset.age === age) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        // Mostra spazio selezionato
+        function showSpace(spaceId) {
+            document.querySelectorAll('.space-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            document.querySelectorAll('.space-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(spaceId).classList.add('active');
+        }
+        
+        // Animazione elementi fluttuanti
+        document.querySelectorAll('.floating-element').forEach((el, index) => {
+            el.style.animationDelay = `${index * 1.5}s`;
+        });
+        
+        // Effetto pulsanti
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mouseover', function() {
+                this.style.transform = 'translateY(-3px)';
+            });
+            
+            button.addEventListener('mouseout', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+        
+        // Simulazione giorni evento nel calendario
+        document.querySelectorAll('.event-day').forEach(day => {
+            day.addEventListener('click', function() {
+                alert('Evento speciale: "Costruiamo un drago!"\nData: ' + this.textContent + ' Ottobre\nOra: 15:30-17:30');
+            });
+        });
+document.addEventListener('DOMContentLoaded', function() {
+    // Imposta la data minima (oggi)
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('bookingDate').min = today;
+
+    // Variabili di stato
+    let currentStep = 1;
+    const form = document.getElementById('bookingForm');
+    const steps = document.querySelectorAll('.form-step');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const submitBtn = document.getElementById('submitBtn');
+    const summaryContent = document.getElementById('summaryContent');
+    const totalPrice = document.getElementById('totalPrice');
+
+    // Prezzi dei servizi
+    const prices = {
+        laboratorio: 15,
+        gioco_libero: 10,
+        compleanno: 150
+    };
+
+    // Gestione navigazione
+    nextBtn.addEventListener('click', nextStep);
+    prevBtn.addEventListener('click', prevStep);
+
+    // Aggiorna riepilogo in tempo reale
+    form.addEventListener('change', updateSummary);
+
+    // Inizializza
+    updateNavigation();
+    updateSummary();
+
+    function nextStep() {
+        if (validateStep(currentStep)) {
+            steps[currentStep - 1].classList.remove('active');
+            currentStep++;
+            steps[currentStep - 1].classList.add('active');
+            updateNavigation();
+        }
+    }
+
+    function prevStep() {
+        steps[currentStep - 1].classList.remove('active');
+        currentStep--;
+        steps[currentStep - 1].classList.add('active');
+        updateNavigation();
+    }
+
+    function validateStep(step) {
+        let isValid = true;
+        const currentStepEl = steps[step - 1];
+        const requiredInputs = currentStepEl.querySelectorAll('[required]');
+
+        requiredInputs.forEach(input => {
+            if (!input.value) {
+                input.style.borderColor = 'var(--error)';
+                isValid = false;
+                // Scrolla all'input mancante
+                input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+                input.style.borderColor = 'var(--border)';
+            }
+        });
+
+        return isValid;
+    }
+
+    function updateNavigation() {
+        // Mostra/nascondi pulsanti
+        prevBtn.disabled = currentStep === 1;
+        nextBtn.style.display = currentStep === steps.length ? 'none' : 'block';
+        submitBtn.style.display = currentStep === steps.length ? 'block' : 'none';
+
+        // Aggiorna indicatori di progresso
+        document.querySelectorAll('.form-step h2 span').forEach((span, index) => {
+            if (index + 1 < currentStep) {
+                span.innerHTML = '<i class="fas fa-check"></i>';
+                span.style.backgroundColor = 'var(--success)';
+            } else {
+                span.textContent = index + 1;
+                span.style.backgroundColor = index + 1 === currentStep ? 'var(--primary)' : '#ccc';
+            }
+        });
+    }
+
+    function updateSummary() {
+        const formData = new FormData(form);
+        const service = formData.get('service');
+        const participants = parseInt(formData.get('participants')) || 0;
+        
+        let summaryHTML = '<ul class="summary-list">';
+        
+        // Servizio selezionato
+        if (service) {
+            const serviceName = {
+                laboratorio: 'Laboratorio Creativo',
+                gioco_libero: 'Gioco Libero',
+                compleanno: 'Festa di Compleanno'
+            }[service];
+            
+            summaryHTML += `
+                <li>
+                    <strong>Servizio:</strong>
+                    <span>${serviceName}</span>
+                </li>
+            `;
+        }
+
+        // Data e orario
+        if (formData.get('bookingDate')) {
+            const options = { weekday: 'long', day: 'numeric', month: 'long' };
+            const date = new Date(formData.get('bookingDate'));
+            const formattedDate = date.toLocaleDateString('it-IT', options);
+            
+            summaryHTML += `
+                <li>
+                    <strong>Data:</strong>
+                    <span>${formattedDate}</span>
+                </li>
+            `;
+        }
+
+        if (formData.get('timeSlot')) {
+            const timeSlot = {
+                '9-11': '9:00 - 11:00',
+                '11-13': '11:00 - 13:00',
+                '15-17': '15:00 - 17:00',
+                '17-19': '17:00 - 19:00'
+            }[formData.get('timeSlot')];
+            
+            summaryHTML += `
+                <li>
+                    <strong>Orario:</strong>
+                    <span>${timeSlot}</span>
+                </li>
+            `;
+        }
+
+        // Partecipanti
+        if (participants > 0) {
+            summaryHTML += `
+                <li>
+                    <strong>Bambini:</strong>
+                    <span>${participants} (${formData.get('childAge') || '-'})</span>
+                </li>
+            `;
+        }
+
+        // Richieste speciali
+        if (formData.get('specialRequests')) {
+            summaryHTML += `
+                <li>
+                    <strong>Note:</strong>
+                    <span>${formData.get('specialRequests')}</span>
+                </li>
+            `;
+        }
+
+        summaryHTML += '</ul>';
+        summaryContent.innerHTML = summaryHTML;
+
+        // Calcolo prezzo
+        if (service && participants > 0) {
+            const basePrice = prices[service];
+            let total = basePrice * participants;
+            
+            // Sconti per gruppi
+            if (participants >= 5 && service !== 'compleanno') {
+                total *= 0.9; // 10% di sconto
+            }
+            
+            totalPrice.textContent = `€${total.toFixed(2)}`;
+        } else {
+            totalPrice.textContent = '€0';
+        }
+    }
+
+    // Gestione submit
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (validateStep(currentStep)) {
+            // Simulazione invio
+            const submitData = Object.fromEntries(new FormData(form));
+            console.log('Dati inviati:', submitData);
+            
+            // Mostra conferma
+            alert(`Prenotazione confermata!\nRiceverai una mail di conferma a ${submitData.email}`);
+            form.reset();
+            currentStep = 1;
+            steps.forEach(step => step.classList.remove('active'));
+            steps[0].classList.add('active');
+            updateNavigation();
+            updateSummary();
+        }
+    });
+});
+    </script>
+</body>
+</html>
